@@ -10,4 +10,4 @@ Usually a new episode is available under the link at around 12 PM IST every Sund
 
 Cron Schedule ----
 
-00,30 12,16 * * 0 ~/.bash_profile;/<scriptpath>/DragonBallSuper.py > /<path>/crontab
+00,30 12,16 * * 0 ~/.bash_profile; /[scriptpath]/DragonBallSuper.py > /[path]/logger
