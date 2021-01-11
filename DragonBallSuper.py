@@ -22,8 +22,8 @@ In this example, we first crawl the webpage to extract
 all the links and then download videos.
 '''
 
-logger = logging.getLogger('DragonBallSuper')
-hdlr = logging.FileHandler('/var/tmp/DragonBallSuper.log')
+logger = logging.getLogger('DragonBallz')
+hdlr = logging.FileHandler('/var/tmp/DragonBallz.log')
 formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)
@@ -165,8 +165,8 @@ def download_file(url,file,dest="/Users/<username>/Downloads/DragonBallSuper"):
 	#return filename
 
 def notify():
-	title = "DragonBallSuper"
-	episodeNum = open("/Users/<username>/Downloads/DragonBallSuper/episodeCounter",'r').readline()
+	title = "DragonBallz"
+	episodeNum = open("/Users/<username>/Downloads/DragonBallz/episodeCounter",'r').readline()
 	text = "New epidose - {0} downloaded".format(episodeNum)
 	filename = "/Users/<username>/Downloads/DragonBallSuper/dragonballsuper_"+episodeNum+".mp4"
 	if os.path.exists(filename):
